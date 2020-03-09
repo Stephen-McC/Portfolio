@@ -21,53 +21,63 @@
   <!-- Custom styles for this template -->
   <link href="css/CV.min.css" rel="stylesheet">
 
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- Plugin JavaScript -->
+  <script type="text/javascript" src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts -->
+  <script type="text/javascript" src="js/Scroll.min.js" defer></script>
+  <script type="text/javascript" src="js/Nav-button.min.js" defer></script>
+  
 </head>
 
 <body id="page-top">
 
+  <!--HEADER-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <span class="d-block d-lg-none">Stephen McCallum</span>
+      <span class="d-block d-lg-none"></span>
       <span class="d-none d-lg-block">
         <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
       </span>
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+
+    <div>
+      <a href="#page-top" class="js-scroll-trigger"> 
+      <img class="img img-signature" src="img/signature.png" alt="Stephen McCallum">
+      </a>
+    </div>
+
+    <button class="navbar-toggler ani-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+    <div class="mr-5 collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          <a class="nav-link js-scroll-trigger" href="#services">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#project">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+          <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+          <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
   </nav>
 
+  <!--CONTENT-->
   <div class="container-fluid p-0">
 
-    <form method="get" action="files/Stephen McCallum Software Developer CV.pdf" target="_blank">
-      <button class="btn btn-download">
-        <i class="fas fa-download"></i>
-        PDF CV
-      </button>
-    </form>
-
+    <!--ABOUT ME-->
     <section class="CV-section p-3 p-lg-5 d-flex align-items-center" id="about">
       <div class="w-100">
         <h1 class="mb-0">Stephen
@@ -93,245 +103,185 @@
 
     <hr class="m-0">
 
-    <section class="CV-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+    <!--SERVICES-->
+    <section class="CV-section p-3 p-lg-5 d-flex align-items-center" id="services">
       <div class="w-100">
-        <h2 class="mb-5">Experience</h2>
-
-        <div class="CV-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="CV-content">
-            <h3 class="mb-0">Creative Director</h3>
-            <div class="subheading mb-3">
-              <a href="http://www.latepanda.com/" target="_blank">Late Panda</a>
-            </div>
-            <p>I co-founded the game studio Late Panda with my partner Elisabeth during our third year of University. Our aim was to improve the factors of the gaming industry that we disagreed with on principle. We worked on multiple projects aiming to tackle different factors of the industry, our largest project 'Skorian Tales' was designed to be the first true mobile role-playing game. However, the large scale of the product and our business inexperience lead to us abandoning the project. We took some time creating other projects such as <a href="https://play.google.com/store/apps/details?id=com.latepanda.EchoesOfHope&gl=GB" target="_blank">Echoes of Hope</a> and our self titled game <a href="https://play.google.com/store/apps/details?id=com.LatePanda.LatePanda" target="_blank">Late Panda</a>, more information on these projects can be found below.</p>
-            <p>My main duties within Late Panda included; leading the development team to follow the design concepts, handling business to business meetings, attending and showcasing at events like <a href="https://www.resonatetotalgaming.com/" target="_blank">Resonate Total Gaming</a>, <a href="https://www.4thegamers.co.uk/" target="_blank">4TG (4 The Gamers)</a> and <a href="https://www.gdconf.com/" target="_blank">GDC (Game Developer Conference)</a>. I would create design documents that would outline what the final product would resemble, then oversee the development of assets ensuring they kept within the same themes and would fit the finished product.</p>
+        <h2 class="mb-5">Services</h2>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-lightbulb fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Plan</h4>
+            <p class="lead mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, dolorum aspernatur similique harum, porro consequatur est aliquid dolores molestiae corrupti cumque recusandae deserunt incidunt hic, debitis ipsum placeat qui facere.</p>
           </div>
-          <div class="CV-date text-md-right">
-            <span class="text-secondary">July 2013 - Present</span>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-cogs fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Design</h4>
+            <p class="lead mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, dolorum aspernatur similique harum, porro consequatur est aliquid dolores molestiae corrupti cumque recusandae deserunt incidunt hic, debitis ipsum placeat qui facere.</p>
           </div>
-        </div>
-
-        <div class="CV-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="CV-content">
-            <h3 class="mb-0">Personal Projects</h3>
-            <br>
-            <p>For several years I would spend my free time developing short stories and long expanding narratives. Over the past decade, I have critically analysed website and software faults and successes in order to improve my own design practices. I have started to join Game Jams to teach myself new skills while also working within a very strict 48-hour timeframe. My first Game Jam was the 2018 Global Game Jam where I joined a group as a silent observer to study another designer at work within one of these jams. I then joined the 2019 GMTK Game Jam where my partner Elisabeth and I developed the short narrative experience <a href="https://late-panda.itch.io/head-ache" target="_blank">Head Ache</a> within the RPG Maker V toolkit.</p>
-            <p>I have been building my knowledge of programming languages since my university days to include Ruby on Rails, PHP, Java and SQL over the past few months. I still consider myself a novice with each language, however, I am seeking to improve each one as programming still interests me.</p>
-            <p>I have also completed an online course with <a href="https://www.shawacademy.com/" target="_blank">Shaw Academy</a> to refresh and build upon my knowledge and experience with HTML and CSS to better understand modern practices.</p>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-code fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Develop</h4>
+            <p class="lead mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, dolorum aspernatur similique harum, porro consequatur est aliquid dolores molestiae corrupti cumque recusandae deserunt incidunt hic, debitis ipsum placeat qui facere.</p>
           </div>
-          <div class="CV-date text-md-right">
-            <span class="text-secondary">April 2010 - Present</span>
-          </div>
-        </div>
+        </div>        
       </div>
     </section>
 
     <hr class="m-0">
 
-      <section class="CV-section p-3 p-lg-5 d-flex align-items-center" id="project">
-        <div class="w-100">
-          <h2 class="mb-5">Projects</h2>
+    <!--PORTFOLIO-->
 
-      <!-- Project Grid Items -->
-      <div class="row">
-
-        <!-- Project Item 1 -->
-        <div class="col-md-5 col-lg-3">
-          <div class="project-item mx-auto" data-toggle="modal" data-target="#projectModal1">
-            <div class="project-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="project-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/EoH 512 Icon.png" alt="Echoes of Hope Icon">
-          </div>
-        </div>
-
-        <!-- Project Item 2 -->
-        <div class="col-md-5 col-lg-3">
-          <div class="project-item mx-auto" data-toggle="modal" data-target="#projectModal2">
-            <div class="project-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="project-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/LPG Icon 512 v2.png" alt="Late Panda Game Icon">
-          </div>
-        </div>
-
-        <!-- Project Item 3 -->
-        <div class="col-md-5 col-lg-3">
-          <div class="project-item mx-auto" data-toggle="modal" data-target="#projectModal3">
-            <div class="project-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="project-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/TULP-BG.jpg" alt="The Untitled Late Panda Board Game Icon">
-          </div>
-        </div>
-
-        <!-- Project Item 4 -->
-        <div class="col-md-5 col-lg-3">
-          <div class="project-item mx-auto" data-toggle="modal" data-target="#projectModal4">
-            <div class="project-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="project-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/HeadAche.jpg" alt="Head Ache Icon">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="CV-section p-3 p-lg-5 d-flex align-items-center" id="education">
+    <section class="CV-section p-3 p-lg-5 d-flex align-items-center" id="portfolio">
       <div class="w-100">
-        <h2 class="mb-5">Education</h2>
+        <h2 class="mb-5">Portfolio</h2>    
 
-        <div class="CV-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="CV-content">
-            <h3 class="mb-0">University of West of Scotland</h3>
-            <div class="subheading mb-3">Bachelor of Science</div>
-            <div>Computer Games Development </div>
-            <p>2.2</p>
+    <div class="row">
+
+      <div class="col-md-5 col-lg-3">
+        <div class="portfolio-item mx-auto column web" data-toggle="modal" data-target="#portfolioModal1">
+          <div class="portfolio-item-caption align-items-center justify-content-center h-100 w-100">
+            <div class="portfolio-item-caption-content text-center text-white">
+              <i class="fas fa-plus fa-3x"></i>
+            </div>
           </div>
-          <div class="CV-date text-md-right">
-            <span class="text-secondary">August 2006 - May 2010</span>
-          </div>
+          <img class="img-fluid test" src="img/EoH 512 Icon.png" alt="Echoes of Hope Icon">
         </div>
+      </div>
 
-        <div class="CV-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="CV-content">
-            <h3 class="mb-0">Shaw Academy</h3>
-            <div class="subheading mb-3">Mobile App Development Course</div>
-            <div class="subheading mb-3">Web Design Course</div>
-            <div class="subheading mb-3">Web Development Course</div>
-            <div class="subheading mb-3">Advanced Web Design Course</div>
-            <div class="subheading mb-3">Advanced Web Development Course</div>
+      <div class="col-md-5 col-lg-3">
+        <div class="portfolio-item mx-auto column game" data-toggle="modal" data-target="#portfolioModal2">
+          <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+            <div class="portfolio-item-caption-content text-center text-white">
+              <i class="fas fa-plus fa-3x"></i>
+            </div>
           </div>
-          <div class="CV-date text-md-right">
-            <span class="text-secondary">September 2019 - November 2019</span>
-          </div>
+          <img class="img-fluid" src="img/LPG Icon 512 v2.png" alt="Late Panda Game Icon">
         </div>
-
       </div>
-    </section>
 
-    <hr class="m-0">
-
-    <section class="CV-section p-3 p-lg-5 d-flex align-items-center" id="skills">
-      <div class="w-100">
-        <h2 class="mb-5">Skills</h2>
-
-        <div class="subheading mb-3">Programming Languages</div>
-        <ul class="list-inline dev-icons">
-          <li class="list-inline-item">
-            <i class="fab fa-html5"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-css3-alt"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-js-square"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-wordpress"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-php"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-java"></i>
-          </li>
-        </ul>
-
-        <div class="subheading mb-3">Software</div>
-        <ul class="list-inline-item">
-          <li>
-            Unity
-          </li>
-          <li>
-            Visual Studio Code
-          </li>
-          <li>
-            Eclipse
-          </li>
-          <li>
-            Visual Basic
-          </li>
-          <li>
-            Android Studio
-          </li>
-          <li>
-            GameMaker
-          </li>
-          <li>
-            RPG Maker V
-          </li>
-          <li>
-            Unreal Engine
-          </li>
-          <li>
-            Photoshop
-          </li>
-          <li>
-            G.I.M.P
-          </li>
-          <li>
-            GIT
-          </li>
-          <li>
-            Bitbucket
-          </li>
-          <li>
-            MS Office Suite
-          </li>
-          <br>
-        </ul>
+      <div class="col-md-5 col-lg-3">
+        <div class="portfolio-item mx-auto column app" data-toggle="modal" data-target="#portfolioModal3">
+          <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+            <div class="portfolio-item-caption-content text-center text-white">
+              <i class="fas fa-plus fa-3x"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="img/TULP-BG.jpg" alt="The Untitled Late Panda Board Game Icon">
+        </div>
       </div>
-    </section>
 
-    <hr class="m-0">
-
-    <section class="CV-section p-3 p-lg-5 d-flex align-items-center" id="interests">
-      <div class="w-100">
-        <h2 class="mb-5">Interests</h2>
-        <p>Apart from being a software developer, I enjoy keeping myself fit. I will regularly exercise at home as well as go for runs to keep myself active. I like to challenge myself to new tasks, I always seek to gain knowledge in order to improve anything I may work on in the future.</p>
-        <p class="mb-0">I enjoy attending gaming events, either as an exhibitor or as a guest. These give me the opportunity to see what is coming in the future and speak to other developers for insight into their projects. I also enjoy to write stories, I have always seen myself as a storyteller so I find myself lost in my own imagination if I am left alone with nothing to do.</p>
-        <p>
-        </p>
+      <div class="col-md-5 col-lg-3">
+        <div class="portfolio-item mx-auto column game" data-toggle="modal" data-target="#portfolioModal4">
+          <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+            <div class="portfolio-item-caption-content text-center text-white">
+              <i class="fas fa-plus fa-3x"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="img/HeadAche.jpg" alt="Head Ache Icon">
+        </div>
       </div>
-  </div>
-
-  <footer class="CV-section p-3 p-lg-5 d-flex align-items-center">
-    <div class="w-100">
-      <p class="mb-0">Hire me at: <a href="mailto:smccallumcareers@gmail.com">smccallumcareers@gmail.com</a>.</p>
-      <p>Online CV created by: Stephen McCallum</p>
-      <script type="text/JavaScript"> 
-        var theDate=new Date(); 
-        document.write("Copyright " + theDate.getFullYear());
-      </script>
     </div>
-  </footer>
+  </section> 
 
-  <!-- Project Modals -->
+  <hr class="m-0">
 
-  <!-- Project Modal 1 -->
-  <div class="project-modal modal fade" id="projectModal1" tabindex="-1" role="dialog" aria-labelledby="projectModal1Label" aria-hidden="true">
+  <!--Skills-->
+  <section class="CV-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+    <div class="w-100">
+      <h2 class="mb-5">Skills</h2>
+
+      <div class="subheading mb-3">Programming</div>
+      <ul class="list-inline dev-icons">
+        <li class="list-inline-item">
+          <i class="fab fa-html5"></i>
+        </li>
+        <li class="list-inline-item">
+          <i class="fab fa-css3-alt"></i>
+        </li>
+        <li class="list-inline-item">
+          <i class="fab fa-js-square"></i>
+        </li>
+        <li class="list-inline-item">
+          <i class="fab fa-wordpress"></i>
+        </li>
+        <li class="list-inline-item">
+          <i class="fab fa-php"></i>
+        </li>
+        <li class="list-inline-item">
+          <i class="fab fa-java"></i>
+        </li>
+      </ul>
+
+      <div class="subheading mb-3">Software</div>
+      <ul class="list-inline-item">
+        <li>
+          <p class="lead m-0">Unity</p>
+        </li>
+        <li>
+          <p class="lead m-0">Visual Studio Code</p>
+        </li>
+        <li>
+          <p class="lead m-0">Eclipse</p>
+        </li>
+        <li>
+          <p class="lead m-0">Visual Basic</p>
+        </li>
+        <li>
+          <p class="lead m-0">Android Studio</p>
+        </li>
+        <li>
+          <p class="lead m-0">GameMaker</p>
+        </li>
+        <li>
+          <p class="lead m-0">RPG Maker V</p>
+        </li>
+        <li>
+          <p class="lead m-0">Unreal Engine</p>
+        </li>
+        <li>
+          <p class="lead m-0">Photoshop</p>
+        </li>
+        <li>
+          <p class="lead m-0">G.I.M.P</p>
+        </li>
+        <li>
+          <p class="lead m-0">GIT</p>
+        </li>
+        <li>
+          <p class="lead m-0">Bitbucket</p>
+        </li>
+        <li>
+          <p class="lead m-0">MS Office Suite</p>
+        </li>
+        <br>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Portfolio Modals -->
+
+  <!-- Portfolio Modal 1 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <div class="modal-body text-center">
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-8">
-                <!-- Project Modal - Title -->
-                <h2 class="project-modal-title text-secondary text-uppercase mb-0">Echoes of Hope</h2>
-                <!-- Project Modal - Image -->
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Echoes of Hope</h2>
+                <!-- Portfolio Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/EoH 512 Icon.png" alt="Echo of Hope Icon">
-                <!-- Project Modal - Text -->
+                <!-- Portfolio Modal - Text -->
                 <p class="mb-5">We created this short emotional game as part of the 1GAM challenge. Participates attempt to create a full game within a 1 month period, for the month of February  we decided to create something heavily focused on narrative. Echoes of Hope is a narrative experience, telling the story of two friends while once copes with depression and the other must help them through it. We created puzzles that made the player focus on helping the depressed character through their struggle while a voice-over would play giving them context to how their character feels.</p>
                 <a href="https://play.google.com/store/apps/details?id=com.latepanda.EchoesOfHope" target="_blank">
                   <button class="btn btn-primary">
@@ -351,19 +301,19 @@
     </div>
   </div>
 
-  <!-- Project Modal 2 -->
-  <div class="project-modal modal fade" id="projectModal2" tabindex="0" role="dialog" aria-labelledby="projectModal2Label" aria-hidden="true">
+  <!-- Portfolio Modal 2 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="0" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <div class="modal-body text-center">
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-8">
-                <!-- Project Modal - Title -->
-                <h2 class="project-modal-title text-secondary text-uppercase mb-0">Late Panda Game</h2>
-                <!-- Project Modal - Image -->
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Late Panda Game</h2>
+                <!-- Portfolio Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/LPG Icon 512 v2.png" alt="Late Panda Game Icon">
-                <!-- Project Modal - Text -->
+                <!-- Portfolio Modal - Text -->
                 <p class="mb-5">We created this infinite runner and memory-based game as part of the 1GAM challenge. Participates attempt to create a full game within a 1 month period, for the month of March we wanted to create something with a company mascot. The Late Panda Game is a memory-based game, after the development of Echoes of Hope was completed we wanted to focus on something else that may help the player. This game is meant to help the player improve their memory as each time the game is played the obstacles will be in random order. Players must quickly memorize the obstacles in order to get further and score higher.</p>
                 <a href="https://play.google.com/store/apps/details?id=com.LatePanda.LatePanda" target="_blank">
                   <button class="btn btn-primary">
@@ -383,19 +333,19 @@
     </div>
   </div>
 
-  <!-- Project Modal 3 -->
-  <div class="project-modal modal fade" id="projectModal3" tabindex="1" role="dialog" aria-labelledby="projectModal3Label" aria-hidden="true">
+  <!-- Portfolio Modal 3 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <div class="modal-body text-center">
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-8">
-                <!-- Project Modal - Title -->
-                <h2 class="project-modal-title text-secondary text-uppercase mb-0">The Untitled Late Panda Board Game</h2>
-                <!-- Project Modal - Image -->
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">The Untitled Late Panda Board Game</h2>
+                <!-- Portfolio Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/TULP-BG.jpg" alt="The Untitled Late Panda Board Game Icon">
-                <!-- Project Modal - Text -->
+                <!-- Portfolio Modal - Text -->
                 <p class="mb-5">This is a board game my partner and I have been creating since we decided to no longer work formally within Late Panda. We have been working on this board game since the end of 2019, it was a mixture of other board games we have played as well as our own mechanics and ideas to change some of the formulas. We have created a prototype which we began testing at gaming cafes around Glasgow and we will be working on an updated version that we will then attempt to have published. This board game was created as a hobby for something me and my partner could easily work on together while busy with other things.</p>
                 <a href="http://www.latepanda.com/" target="_blank">
                   <button class="btn btn-primary">
@@ -415,19 +365,19 @@
     </div>
   </div>
 
-  <!-- Project Modal 4 -->
-  <div class="project-modal modal fade" id="projectModal4" tabindex="2" role="dialog" aria-labelledby="projectModal4Label" aria-hidden="true">
+  <!-- Portfolio Modal 4 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="2" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <div class="modal-body text-center">
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-8">
-                <!-- Project Modal - Title -->
-                <h2 class="project-modal-title text-secondary text-uppercase mb-0">HeadAche</h2>
-                <!-- Project Modal - Image -->
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">HeadAche</h2>
+                <!-- Portfolio Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/HeadAche.jpg" alt="HeadAche Icon">
-                <!-- Project Modal - Text -->
+                <!-- Portfolio Modal - Text -->
                 <p class="mb-5">This game was made during the 48-hour GMTK Game Jam, by myself and my partner. It was made in RPG MAKER V and was meant to focus on a narrative as most games created during a game jam usually aim to create a mechanic based on the theme. The theme for this jam was "Only One" so we decided to centre the narrative theme on the main character being the only one who can help himself through his difficulties. We left the majority of the narrative up to interpretation, feel free to play and see what feel.</p>
                 <a href="https://late-panda.itch.io/head-ache" target="_blank">
                   <button class="btn btn-primary">
@@ -447,17 +397,30 @@
     </div>
   </div>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-  
-  <!-- Custom scripts for this template -->
-  <script src="js/CV.min.js"></script>
-
 </body>
+
+<footer class="CV-section p-3 p-lg-5 d-flex align-items-center">
+
+  <div class="w-100">
+    <p class="lead m-0">Hire me at: <a href="mailto:smccallumcareers@gmail.com">smccallumcareers@gmail.com</a>.</p>
+    <br>
+    <p class="lead m-0">Online CV created by Stephen McCallum</p>
+    <p class="lead m-0">
+    <script type="text/JavaScript"> 
+      var theDate=new Date(); 
+      document.write("Copyright " + theDate.getFullYear());
+    </script>
+    </p>
+  </div>
+
+  <!--PDF CV-->
+  <form method="get" action="files/Stephen McCallum Software Developer CV.pdf" target="_blank">
+    <button class="btn btn-download">
+      <i class="fas fa-download"></i>
+      PDF CV
+    </button>
+  </form>
+
+</footer>
 
 </html>
